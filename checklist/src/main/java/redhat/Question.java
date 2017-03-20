@@ -13,6 +13,16 @@ public class Question implements java.io.Serializable
    private java.lang.String question;
    private java.lang.String type;
 
+   private java.lang.String date;
+
+   private java.lang.String resultType;
+
+   private java.lang.String answerType;
+
+   private java.lang.String answer;
+
+   private java.lang.String additionalAnswer;
+
    public Question()
    {
    }
@@ -47,12 +57,69 @@ public class Question implements java.io.Serializable
       this.type = type;
    }
 
+   public java.lang.String getDate()
+   {
+      return this.date;
+   }
+
+   public void setDate(java.lang.String date)
+   {
+      this.date = date;
+   }
+
+   public java.lang.String getResultType()
+   {
+      return this.resultType;
+   }
+
+   public void setResultType(java.lang.String resultType)
+   {
+      this.resultType = resultType;
+   }
+
+   public java.lang.String getAnswerType()
+   {
+      return this.answerType;
+   }
+
+   public void setAnswerType(java.lang.String answerType)
+   {
+      this.answerType = answerType;
+   }
+
+   public java.lang.String getAnswer()
+   {
+      return this.answer;
+   }
+
+   public void setAnswer(java.lang.String answer)
+   {
+      this.answer = answer;
+   }
+
+   public java.lang.String getAdditionalAnswer()
+   {
+      return this.additionalAnswer;
+   }
+
+   public void setAdditionalAnswer(java.lang.String additionalAnswer)
+   {
+      this.additionalAnswer = additionalAnswer;
+   }
+
    public Question(java.lang.String id, java.lang.String question,
-         java.lang.String type)
+         java.lang.String type, java.lang.String date,
+         java.lang.String resultType, java.lang.String answerType,
+         java.lang.String answer, java.lang.String additionalAnswer)
    {
       this.id = id;
       this.question = question;
       this.type = type;
+      this.date = date;
+      this.resultType = resultType;
+      this.answerType = answerType;
+      this.answer = answer;
+      this.additionalAnswer = additionalAnswer;
    }
 
 }
