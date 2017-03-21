@@ -50,9 +50,9 @@ public class QandAContext implements java.io.Serializable
       this.answers = answers;
    }
 
-    public void addQuestion(String id, String question){
+    public void addQuestion(String id, String question,String type){
         
-        redhat.checklist.Question q= new redhat.checklist.Question(id,question,null,null,null,null,null,null);
+        redhat.checklist.Question q= new redhat.checklist.Question(id,question,type,null,null,null,null,null);
         if(this.questions== null){
             
             this.questions = new java.util.ArrayList<redhat.checklist.Question>();
