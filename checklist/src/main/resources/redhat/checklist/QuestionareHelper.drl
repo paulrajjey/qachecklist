@@ -1,11 +1,21 @@
 package redhat.checklist;
 import redhat.checklist.QandAContext;
 import org.drools.core.spi.KnowledgeHelper;
+import java.lang.String;
+import redhat.checklist.Question;
+import redhat.checklist.Answer;
 function void createQuestionare(KnowledgeHelper droorsContxt , String id, String question,String type) {
 
     QandAContext qaContext = new  QandAContext( );
     qaContext.addQuestion( "1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" );
     droorsContxt.insert(qaContext); 
 
+
+}
+
+function void addNextQuestion(QandAContext qaContext, Answer answer {
+
+   java.util.List<Answer> answs = qaContext.getAnswers();    
+   
 
 }
