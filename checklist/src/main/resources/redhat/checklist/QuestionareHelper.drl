@@ -3,5 +3,8 @@ import redhat.checklist.QandAContext
 function void createQuestionare(String id, String question) {
 
     QandAContext qaContet = new  QandAContext( );
+     
+     qaContet.addQuestion(id, question)
+     drools.insert();
     
 }
