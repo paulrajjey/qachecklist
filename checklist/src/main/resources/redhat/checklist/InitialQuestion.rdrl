@@ -7,4 +7,5 @@ rule "InitialQuestion"
 	when
 		exists (Questionare( id == null )) 
 	then
+		createQuestionare(drools,"","","");
 end
