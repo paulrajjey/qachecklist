@@ -13,7 +13,7 @@ function void createQuestionare(KnowledgeHelper droorsContxt , String id, String
 
 }
 
-function void addNextQuestion(QandAContext qaContext, Answer answer) {
+function void addNextQuestion(QandAContext qContext, Answer answer) {
 
    java.util.List<Answer> answs = qaContext.getAnswers();    
    if(answs == null){
