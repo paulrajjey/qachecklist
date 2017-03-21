@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "InitialQuestion"
 	dialect "mvel"
 	when
-		exists (Questionare( id == null )) 
+		questionare : Questionare( id == null )
 	then
-		createQuestionare(drools,"1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" );
+		createQuestionare(drools,questionare,"1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" );
 end
