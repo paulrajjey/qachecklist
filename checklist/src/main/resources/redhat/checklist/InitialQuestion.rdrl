@@ -5,5 +5,6 @@ import java.lang.Number;
 rule "InitialQuestion"
 	dialect "mvel"
 	when
+		exists (Questionare( id == null )) 
 	then
 end
