@@ -1,11 +1,16 @@
 package redhat.checklist;
 import redhat.checklist.QandAContext;
 import java.util.List;
+import redhat.checklist.Questionare;
 query questionareQuery(String questinareId)
    queryContext : QandAContext( id == questinareId )
 end
 
-query allQuestionareQuery 
+query allQuestionareContextQuery 
    queryContexts : List( size > 0 ) from collect ( QandAContext( id != null) )
+end
+
+query allQuestionare 
+   queryQuestionare : List( size > 0 ) from collect ( Questionare( id != null) )
 end
 
