@@ -4,10 +4,13 @@ import org.drools.core.spi.KnowledgeHelper;
 import java.lang.String;
 import redhat.checklist.Question;
 import redhat.checklist.Answer;
+import java.util.UUID;
 function void createQuestionare(KnowledgeHelper droorsContxt , String id, String question,String type) {
 
     QandAContext qaContext = new  QandAContext( );
+    UUID uid = UUID.randomUUID();
     qaContext.addQuestion( "1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" );
+    qaContext.setId(uid.toString()):
     droorsContxt.insert(qaContext); 
 
 
