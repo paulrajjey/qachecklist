@@ -1,0 +1,9 @@
+package redhat.checklist;
+
+import java.lang.Number;
+
+rule "InitialQuestion"
+	dialect "mvel"
+	when
+	then
+end
