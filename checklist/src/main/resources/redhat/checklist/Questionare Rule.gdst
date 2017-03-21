@@ -53,7 +53,7 @@
       </window>
     </Pattern52>
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
+      <hideColumn>true</hideColumn>
       <width>-1</width>
       <header>check QuestioncontextExist</header>
       <constraintValueType>1</constraintValueType>
@@ -105,7 +105,7 @@
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
+          <hideColumn>true</hideColumn>
           <width>-1</width>
           <header>check QuestioncontextExist</header>
           <constraintValueType>1</constraintValueType>
