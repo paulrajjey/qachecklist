@@ -18,6 +18,8 @@ public class Answer implements java.io.Serializable
 
    private java.lang.String questionareID;
 
+   private java.lang.String question;
+
    public Answer()
    {
    }
@@ -82,9 +84,20 @@ public class Answer implements java.io.Serializable
       this.questionareID = questionareID;
    }
 
+   public java.lang.String getQuestion()
+   {
+      return this.question;
+   }
+
+   public void setQuestion(java.lang.String question)
+   {
+      this.question = question;
+   }
+
    public Answer(java.lang.String questionId, java.lang.String answer,
          java.lang.String nextQuestionId, java.lang.String nextQuestion,
-         java.lang.String nextQuestionTYpe, java.lang.String questionareID)
+         java.lang.String nextQuestionTYpe, java.lang.String questionareID,
+         java.lang.String question)
    {
       this.questionId = questionId;
       this.answer = answer;
@@ -92,6 +105,7 @@ public class Answer implements java.io.Serializable
       this.nextQuestion = nextQuestion;
       this.nextQuestionTYpe = nextQuestionTYpe;
       this.questionareID = questionareID;
+      this.question = question;
    }
 
 }
