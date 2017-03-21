@@ -6,6 +6,6 @@ query questionareQuery(String questinareId)
 end
 
 query allQuestionareQuery 
-   queryContexts : List(size > 0 ) from collect ( QandAContext( id != null))
+   queryContexts : List( size > 0 ) from collect ( QandAContext( id != null) )
 end
 
