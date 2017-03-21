@@ -1,2 +1,6 @@
 package redhat.checklist;
+import redhat.checklist.QandAContext;
+query questionareQuery(String questinareId)
+   queryContext : QandAContext( id == questinareId )
+end
 
