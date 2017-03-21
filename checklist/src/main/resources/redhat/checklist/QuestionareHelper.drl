@@ -11,7 +11,7 @@ function void createQuestionare(KnowledgeHelper droorsContxt , Questionare quest
     QandAContext qaContext = new  QandAContext( );
     UUID uid = UUID.randomUUID();
     String uuid = uid.toString();
-    Question ques = new Question(i"1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" , null, null, null, null, null);
+    Question ques = new Question("1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" , null, null, null, null, null);
     qaContext.addQuestion( ques );
     qaContext.setId(uuid);
     qaContext.setNextQuestion();
