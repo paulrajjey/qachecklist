@@ -6,6 +6,5 @@ rule "InitialQuestion"
 	dialect "mvel"
 	when
 		exists (Questionare( contextId : id)) 
-		not (QandAContext( id == contextId )) 
 	then
 end
