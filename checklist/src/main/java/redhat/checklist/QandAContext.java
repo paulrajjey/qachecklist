@@ -29,11 +29,7 @@ public class QandAContext implements java.io.Serializable
       this.id = id;
    }
 
-   public addQuestion()
-   {
-
-   }
-
+   
    public java.util.List<redhat.checklist.Question> getQuestions()
    {
       return this.questions;
@@ -56,12 +52,12 @@ public class QandAContext implements java.io.Serializable
 
     public void addQuestion(String id, String question){
         
-        redhat.checklist.Question question = new redhat.checklist.Question(id,question,null,null,null,null,null,null);
+        redhat.checklist.Question q= new redhat.checklist.Question(id,question,null,null,null,null,null,null);
         if(this.questions== null){
             
             this.questions = new java.util.ArrayList<redhat.checklist.Question>();
         }
-        this.questions.add(question);
+        this.questions.add(q);
     }
    public QandAContext(java.lang.String id,
          java.util.List<redhat.checklist.Question> questions,
