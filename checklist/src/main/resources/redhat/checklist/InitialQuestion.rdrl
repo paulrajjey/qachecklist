@@ -8,6 +8,6 @@ rule "InitialQuestion"
 		exists (Questionare( contextId : id)) 
 	then
 		QandAContext qaContext = new  QandAContext( );
-		qaContext.addQuestion("1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.");
+		qaContext.addQuestion("1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.","YorN");
 		 kcontext.insert(qaContext);
 end
