@@ -7,5 +7,5 @@ rule "InitialQuestion"
 	when
 		exists (Questionare( id == null )) 
 	then
-		createQuestionare(drools,"","","");
+		createQuestionare(drools,"1", "Are the building contents being taken as collateral by the borrower or related entity? Either by UCC or stated within the mortgage.", "YorN" );
 end
