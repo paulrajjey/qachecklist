@@ -11,9 +11,9 @@ public class QandAContext implements java.io.Serializable
 
    private java.lang.String id;
 
-   private redhat.checklist.Question questions;
+   private java.util.List<redhat.checklist.Question> questions;
 
-   private redhat.checklist.Answer answers;
+   private java.util.List<redhat.checklist.Answer> answers;
 
    public QandAContext()
    {
@@ -29,28 +29,34 @@ public class QandAContext implements java.io.Serializable
       this.id = id;
    }
 
-   public redhat.checklist.Question getQuestions()
+   public addQuestion()
+   {
+
+   }
+
+   public java.util.List<redhat.checklist.Question> getQuestions()
    {
       return this.questions;
    }
 
-   public void setQuestions(redhat.checklist.Question questions)
+   public void setQuestions(java.util.List<redhat.checklist.Question> questions)
    {
       this.questions = questions;
    }
 
-   public redhat.checklist.Answer getAnswers()
+   public java.util.List<redhat.checklist.Answer> getAnswers()
    {
       return this.answers;
    }
 
-   public void setAnswers(redhat.checklist.Answer answers)
+   public void setAnswers(java.util.List<redhat.checklist.Answer> answers)
    {
       this.answers = answers;
    }
 
-   public QandAContext(java.lang.String id, redhat.checklist.Question questions,
-         redhat.checklist.Answer answers)
+   public QandAContext(java.lang.String id,
+         java.util.List<redhat.checklist.Question> questions,
+         java.util.List<redhat.checklist.Answer> answers)
    {
       this.id = id;
       this.questions = questions;
