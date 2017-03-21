@@ -52,6 +52,69 @@
         <parameters/>
       </window>
     </Pattern52>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>true</hideColumn>
+      <width>-1</width>
+      <header>check QuestioncontextExist</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+          <type>exists</type>
+          <patterns>
+            <org.drools.workbench.models.datamodel.rule.FactPattern>
+              <constraintList>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                    <operator>==</operator>
+                    <constraintValueType>6</constraintValueType>
+                    <expression>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                            <name>questionareID</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>answer</name>
+                          <classType>Answer</classType>
+                          <genericType>Answer</genericType>
+                          <factType>Answer</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>QandAContext</factType>
+                    <fieldName>id</fieldName>
+                    <fieldType>String</fieldType>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                </constraints>
+              </constraintList>
+              <factType>QandAContext</factType>
+              <boundName>Qcontext</boundName>
+              <isNegated>false</isNegated>
+              <window>
+                <parameters/>
+              </window>
+            </org.drools.workbench.models.datamodel.rule.FactPattern>
+          </patterns>
+        </org.drools.workbench.models.datamodel.rule.CompositeFactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>true</hideColumn>
+          <width>-1</width>
+          <header>check QuestioncontextExist</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <set-field-col52>
