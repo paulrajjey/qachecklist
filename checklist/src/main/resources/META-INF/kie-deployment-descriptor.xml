@@ -29,6 +29,12 @@
             <name>WebService</name>
         </work-item-handler>
         <work-item-handler>
+            <resolver>Enter resolver type</resolver>
+            <identifier>new org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler()</identifier>
+            <parameters/>
+            <name>Email</name>
+        </work-item-handler>
+        <work-item-handler>
             <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
             <parameters/>
