@@ -1,0 +1,50 @@
+
+<form id="1883750838">
+<property name="name" value="QACheckList-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="checkListContext_id" type="InputText" id="1189252547">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (checkListContext)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="checkLstReview/id"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="checkListContext_answer" type="Subform" id="1354330349">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;answer (checkListContext)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="checkLstReview/answer"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="1" name="checkListContext_answers" bag-type="redhat.checklist.Answer" type="MultipleSubform" id="1992392036">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;answers (checkListContext)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="checkLstReview/answers"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="4" name="checkListContext_questions" bag-type="redhat.checklist.Question" type="MultipleSubform" id="2071997269">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;questions (checkListContext)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="checkLstReview/questions"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="3" name="checkListContext_nextQuestion" type="Subform" id="1341130457">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nextQuestion (checkListContext)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="checkLstReview/nextQuestion"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="5" name="isCheckListReviewed" type="InputText" id="760419551">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;isCheckLstReviewed (isCheckListReviewed)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="isCheckLstReviewed"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="checkLstReview" name="#E9E371" type="dataModelerEntry" outId="" value="redhat.checklist.QandAContext" id="checkListContext"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="isCheckLstReviewed" value="java.lang.String" id="isCheckListReviewed"/>
+</form>
