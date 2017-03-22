@@ -29,7 +29,7 @@ function void addNextQuestion(QandAContext qContext, Answer answer) {
    String qs = answer.getNextQuestion();
    String type = answer.getNextQuestionTYpe();
    
-   Question nQ = new Question(qId,qs,type,null,null,null,null,null);
+   Question nQ = new Question(qId,qs,type,null,null,null,"N",null);
    qContext.setNextQuestion(nQ);
 
 }
