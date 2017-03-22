@@ -23,11 +23,8 @@ function void createQuestionare(KnowledgeHelper droorsContxt , Questionare quest
 
 function void addNextQuestion(QandAContext qContext, Answer answer) {
 
-   java.util.List<Answer> answs = qContext.getAnswers();    
-   if(answs == null){
-    answs = new java.util.ArrayList<Answer>();
-   }
-   answs.add(answer);
+   qContext.addAnswer(answer);
+  
    String qId= answer.getNextQuestionId();
    String qs = answer.getNextQuestion();
    String type = answer.getNextQuestionTYpe();
