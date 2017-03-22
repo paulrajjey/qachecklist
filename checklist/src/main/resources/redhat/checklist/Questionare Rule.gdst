@@ -1241,7 +1241,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>If all the above conditions have been satisfied and in compliance with the regulation, parpare documents</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1286,12 +1286,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>Reach out to LCO for copy.  Once received.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
