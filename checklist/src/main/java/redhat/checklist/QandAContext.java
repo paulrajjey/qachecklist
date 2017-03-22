@@ -52,7 +52,18 @@ public class QandAContext implements java.io.Serializable
    {
       this.answers = answers;
    }
+    public void addAnswer(redhat.checklist.Answer a)
+   {
 
+      
+      if (this.answers == null)
+      {
+
+         this.answers = new java.util.ArrayList<redhat.checklist.Answer>();
+      }
+      this.answers.add(a);
+      
+   }
    public void addQuestion(redhat.checklist.Question q)
    {
 
