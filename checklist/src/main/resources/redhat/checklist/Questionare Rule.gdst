@@ -1241,7 +1241,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>If all the above conditions have been satisfied and in compliance with the regulation, parpare documents</valueString>
+        <valueString>All questions are answered. If all the conditions have been satisfied and in compliance with the regulation parpare documents.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1291,7 +1291,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Reach out to LCO for copy.  Once received.</valueString>
+        <valueString>All questions are answered. Please reach out to LCO for copy, once received.If all the conditions have been satisfied and in compliance with the regulation parpare documents.</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
