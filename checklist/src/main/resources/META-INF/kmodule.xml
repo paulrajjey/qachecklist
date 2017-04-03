@@ -3,6 +3,6 @@
     <ksession name="checksession" type="stateless" default="true" clockType="realtime"/>
   </kbase>
   <kbase name="bpm" default="true" eventProcessingMode="stream" equalsBehavior="identity">
-    <ksession name="bpmsession" type="stateless" default="false" clockType="realtime"/>
+    <ksession name="bpmsession" type="stateful" default="false" clockType="realtime"/>
   </kbase>
 </kmodule>
