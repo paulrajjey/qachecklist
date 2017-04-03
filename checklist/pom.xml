@@ -7,13 +7,13 @@
   <version>1.10</version>
   <packaging>kjar</packaging>
   <name>checklist</name>
-  <repositories>
+  <!--<repositories>
     <repository>
       <id>guvnor-m2-repo</id>
       <name>Guvnor M2 Repo</name>
       <url>http://localhost:8080/business-central/maven2/</url>
     </repository>
-  </repositories>
+  </repositories>-->
   <build>
     <plugins>
       <plugin>
